@@ -18,18 +18,17 @@ add the folowing to ``my_hosts``:
 	localhost ansible_connection=local
 
 preform the following commands to create the proper location of ``main.yml``\
-`` mkdir -p roles/myrole/tasks/``\
-`` cd roles/myrole/tasks/``\
+`` mkdir -p roles/my-role/tasks/``\
+`` cd roles/my-role/tasks/``\
 `` nano main.yml``
 
 add the following to ``main.yml``:
 
-
-	---
-	- name: Copy a file to the remote host
-	copy:
-		src: test.txt
-		dest: /tmp/test.txt
+---\
+- name: Copy a file to the remote host\
+  copy:\
+    src: test.txt\
+    dest: /tmp/test.txt\
 
 
 `` mkdir roles/myrole/files``\
@@ -50,11 +49,10 @@ put the following in ``playbook.yml``:
 
 
 
-
-	---
-	- hosts: my_hosts
-		roles:
-			- myrole
+---\
+- hosts: my_hosts\
+  roles:\
+    - my-role
 			
 
 How should the Directory look like:
