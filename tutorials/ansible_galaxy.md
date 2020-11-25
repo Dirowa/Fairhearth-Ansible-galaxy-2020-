@@ -54,7 +54,7 @@ put the following in ``playbook.yml``:
 	---
 	- hosts: my_hosts
 		roles:
-			- my-role
+			- myrole
 			
 
 
