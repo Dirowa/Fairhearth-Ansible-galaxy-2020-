@@ -49,11 +49,11 @@ put the following in ``playbook.yml``:
 
 
 
----\
-- hosts: my_hosts\
-  roles:\
-    - my-role
-			
+	---\
+	- hosts: my_hosts\
+	  roles:\
+	    - my-role
+
 
 How should the Directory look like:
 
