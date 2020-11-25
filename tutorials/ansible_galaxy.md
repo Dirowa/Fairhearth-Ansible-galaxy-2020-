@@ -24,11 +24,11 @@ preform the following commands to create the proper location of ``main.yml``\
 
 add the following to ``main.yml``:
 
----\
-- name: Copy a file to the remote host\
-  copy:\
-    src: test.txt\
-    dest: /tmp/test.txt\
+	---\
+	- name: Copy a file to the remote host\
+  	copy:\
+    	src: test.txt\
+    	dest: /tmp/test.txt\
 
 
 `` mkdir roles/myrole/files``\
