@@ -69,11 +69,11 @@ setting up the module:
 
  Create the templates:
 
-`` mkdir roles/my-role/templates``
+`` mkdir roles/myrole/templates``
  
-`` mkdir roles/my-roles/defaults``
+`` mkdir roles/myroles/defaults``
 
-`` cd roles/my-roles/defaults/``
+`` cd roles/myroles/defaults/``
 
 `` nano main.yml``
 
