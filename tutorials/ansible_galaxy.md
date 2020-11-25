@@ -59,13 +59,13 @@ put the following in ``playbook.yml``:
 
 How should the Directory look like:
 
-``├── hosts``
-``├── playbook.yml``
-``└── roles``
-``    └── my-role``
-``        ├── files``
-``        │   └── test.txt``
-``        └── tasks``
+``├── hosts``\
+``├── playbook.yml``\
+``└── roles``\
+``    └── my-role``\
+``        ├── files``\
+``        │   └── test.txt``\
+``        └── tasks``\
 ``            └── main.yml ``
 
 Run playbook
