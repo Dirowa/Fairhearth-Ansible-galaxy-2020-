@@ -57,7 +57,18 @@ put the following in ``playbook.yml``:
 			- myrole
 			
 
+How should the Directory look like:
 
+`` .
+├── hosts
+├── playbook.yml
+└── roles
+    └── my-role
+        ├── files
+        │   └── test.txt
+        └── tasks
+            └── main.yml 
+	    ``
 Run playbook
 
 `` ansible-playbook -i myhost playbook.yml``
