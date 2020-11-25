@@ -32,8 +32,8 @@ add the following to ``main.yml``:
 		dest: /tmp/test.txt
 
 
-`` mkdir roles/my-role/files``\
-`` cd roles/my-role/files``\
+`` mkdir roles/myrole/files``\
+`` cd roles/myrole/files``\
 `` nano test.txt``
 
 
@@ -60,11 +60,11 @@ put the following in ``playbook.yml``:
 
 Run playbook
 
-`` ansible-playbook -i my-host playbook.yml``
+`` ansible-playbook -i myhost playbook.yml``
 
 setting up the module:
 
-``ansible -i my_host -m setup my_hosts | less``\
+``ansible -i myhost -m setup my_hosts | less``\
 	crtl-Z to go out
 
  Create the templates:
@@ -85,7 +85,7 @@ setting up the module:
 
 Edit the test.ini.js file:
 
-`` cd roles/my-role/templates``
+`` cd roles/myrole/templates``
 
 `` nano test.ini.j2``
 
@@ -97,7 +97,7 @@ add the following to ``test.ini.j2`` :
 	listen = {{ ansible_default_ipv4.address }}
 
 
-`` cd roles/my-role/tasks``\
+`` cd roles/myrole/tasks``\
 `` nano main.yml``
 
 add the following  in ``main.yml``:
@@ -109,7 +109,7 @@ add the following  in ``main.yml``:
 
 	
 	
-`` ansible-playbook -i my-hosts playbook.yml``\
+`` ansible-playbook -i myhosts playbook.yml``\
 *note, activate command in intro directionary
 
 edit the playbook and my hosts\
